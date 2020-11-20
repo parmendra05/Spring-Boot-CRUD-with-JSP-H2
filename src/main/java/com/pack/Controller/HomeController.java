@@ -21,13 +21,13 @@ import com.pack.Service.StudentService;
 @RequestMapping("/list")
 public class HomeController {
 	
-
+@Autowired
 	private StudentService studentService;
 
-	@Autowired
-	public void setStudentService(StudentService studentService) {
-		this.studentService = studentService;
-	}
+	/*
+	 * @Autowired public void setStudentService(StudentService studentService) {
+	 * this.studentService = studentService; }
+	 */
 	//mapping for home Page
 	@RequestMapping("/home")
 	public String home(){
